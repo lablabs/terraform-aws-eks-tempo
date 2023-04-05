@@ -18,7 +18,13 @@ module "addon_installation_helm" {
   cluster_identity_oidc_issuer_arn = module.eks_cluster.eks_cluster_identity_oidc_issuer_arn
 
   values = yamlencode({
-    # insert sample values here
+    "traces" : {
+      "otlp" : {
+        "grpc" : {
+          "enabled" : true
+        }
+      }
+    }
   })
 }
 
@@ -34,7 +40,13 @@ module "addon_installation_argo_kubernetes" {
   cluster_identity_oidc_issuer_arn = module.eks_cluster.eks_cluster_identity_oidc_issuer_arn
 
   values = yamlencode({
-    # insert sample values here
+    "traces" : {
+      "otlp" : {
+        "grpc" : {
+          "enabled" : true
+        }
+      }
+    }
   })
 
   argo_sync_policy = {
