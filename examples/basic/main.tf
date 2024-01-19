@@ -57,7 +57,8 @@ module "addon_installation_argo_kubernetes" {
 
 
 module "addon_installation_argo_helm" {
-  source            = "../../"
+  source = "../../"
+
   enabled           = true
   argo_enabled      = true
   argo_helm_enabled = true
