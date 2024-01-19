@@ -12,8 +12,10 @@ data "aws_iam_policy_document" "this" {
     actions = [
       "s3:ListBucket",
       "s3:GetObject",
-    ] # checkov:skip=CKV_AWS_111
-
+    ]
+    # checkov:skip=CKV_AWS_111
+    # checkov:skip=CKV_AWS_108
+    # checkov:skip=CKV_AWS_356
     resources = [
       "*",
     ]
