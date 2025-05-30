@@ -4,9 +4,8 @@
  * A Terraform module to deploy the [Tempo](https://grafana.com/docs/tempo/latest/) on Amazon EKS cluster.
  *
  * [![Terraform validate](https://github.com/lablabs/terraform-aws-eks-tempo/actions/workflows/validate.yaml/badge.svg)](https://github.com/lablabs/terraform-aws-eks-tempo/actions/workflows/validate.yaml)
- * [![pre-commit](https://github.com/lablabs/terraform-aws-tempo/actions/workflows/pre-commit.yml/badge.svg)](https://github.com/lablabs/terraform-aws-eks-tempo/actions/workflows/pre-commit.yml)
+ * [![pre-commit](https://github.com/lablabs/terraform-aws-tempo/actions/workflows/pre-commit.yaml/badge.svg)](https://github.com/lablabs/terraform-aws-eks-tempo/actions/workflows/pre-commit.yaml)
  */
-
 locals {
   addon = {
     name = "tempo"
