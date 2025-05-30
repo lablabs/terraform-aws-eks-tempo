@@ -44,6 +44,11 @@ moved {
 }
 
 moved {
+  from = aws_iam_role_policy_attachment.this
+  to   = module.addon-irsa["tempo"].aws_iam_role_policy_attachment.this
+}
+
+moved {
   from = aws_iam_role_policy_attachment.this_additional
   to   = module.addon-irsa["tempo"].aws_iam_role_policy_attachment.this_additional
 }
